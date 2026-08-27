@@ -1,17 +1,12 @@
-import { Navbar } from "./components/Navbar";
 import "./App.css";
+import AppLayout from "./components/layout/AppLayout";
+import AppRoutes from "./routes/AppRoutes";
 
 function App() {
   return (
-    // MAIN CONTAINER
-    <div className="">
-      {/* NAVIGATION BAR */}
-      <Navbar />
-
-      {/* MAIN CONTAINER */}
-
-      {/* FOOTER */}
-    </div>
+    <AppLayout>
+      <AppRoutes />
+    </AppLayout>
   );
 }
 

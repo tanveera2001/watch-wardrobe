@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Search, ShoppingCart } from "lucide-react";
-import logo from "../assets/crop with pc app.png";
+import logo from "../../assets/crop with pc app.png";
 
 export function Navbar() {
   return (
