@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import { Search, ShoppingCart } from "lucide-react";
-import logo from "../../assets/crop with pc app.png";
+import { Heart, Search, User } from "lucide-react";
+import logo from "../../assets/logo.png";
 
 export function Navbar() {
   return (
     // NAVBAR CONTAINER
-    <div className="flex items-center justify-between px-24 py-8 bg-green-100">
+    <nav className="sticky top-0 z-50 flex items-center justify-between px-24 h-20 bg-green-100">
       {/* LOGO CONTAINER  */}
       <div>
         <Link to="/">
@@ -32,29 +32,23 @@ export function Navbar() {
         </Link>
       </div>
 
-      {/* SEARCH BAR & CART ICON CONTAINER */}
+      {/* ICON CONTAINER */}
       <div className="flex items-center gap-6">
-        {/* SEARCH BAR */}
-        <div className="relative">
-          <Search
-            size={20}
-            className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500"
-          />
-          <input
-            type="text"
-            placeholder="Search shirt, pant, wallet..."
-            className="w-64 rounded-full border border-gray-300 bg-white py-2 pl-10 pr-4 outline-none focus:border-green-500"
-          />
-        </div>
+        {/* SEARCH ICON */}
+        <Link to="/watches">
+          <Search size={24} className="text-green-800 hover:text-blue-600" />
+        </Link>
 
-        {/* CART ICON */}
-        <Link to="/cart">
-          <ShoppingCart
-            size={24}
-            className="text-green-800 hover:text-blue-600 cursor-pointer"
-          />
+        {/* WISHLIST ICON */}
+        <Link to="/wishlist">
+          <Heart size={24} className="text-green-800 hover:text-blue-600" />
+        </Link>
+
+        {/* USER ICON */}
+        <Link to="/profile">
+          <User size={24} className="text-green-800 hover:text-blue-600" />
         </Link>
       </div>
-    </div>
+    </nav>
   );
 }
