@@ -41,11 +41,11 @@ export function CollectionPreview() {
         <div className="mb-8 flex items-center justify-between">
           <div>
             <h3 className="text-xl font-semibold text-slate-900">
-              My Watch Collection
+              Collection Preview
             </h3>
 
             <p className="mt-1 text-sm text-slate-500">
-              3 watches in your collection
+              3 watches in this collection
             </p>
           </div>
 

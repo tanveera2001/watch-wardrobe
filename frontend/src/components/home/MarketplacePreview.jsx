@@ -25,18 +25,23 @@ const marketplaceWatches = [
 export function MarketplacePreview() {
   return (
     <section className="bg-slate-100 px-24 py-28">
-      {/* SECTION HEADER */}
       <div className="mb-12 max-w-2xl">
-        <p className="mb-3 text-sm font-medium uppercase tracking-widest text-slate-500">
-          Watch Marketplace
-        </p>
+        <div className="mb-3 flex items-center gap-3">
+          <p className="text-sm font-medium uppercase tracking-widest text-slate-500">
+            Watch Marketplace
+          </p>
+
+          <span className="rounded-full border border-slate-300 px-3 py-1 text-xs font-medium uppercase tracking-wider text-slate-500">
+            Coming Soon
+          </span>
+        </div>
 
         <h2 className="text-4xl font-semibold tracking-tight text-slate-900">
           Discover your next watch.
         </h2>
 
         <p className="mt-4 text-slate-600">
-          Explore watches from trusted local sellers and discover pieces that
+          Explore watches from local sellers and discover pieces that could
           deserve a place in your collection.
         </p>
       </div>
@@ -57,14 +62,14 @@ export function MarketplacePreview() {
               />
             </div>
 
-            {/* WATCH INFORMATION */}
+            {/* WATCH INFO */}
             <div className="p-6">
               <h3 className="text-lg font-semibold text-slate-900">
                 {watch.name}
               </h3>
 
               <p className="mt-2 text-sm text-slate-500">
-                Sold by {watch.seller}
+                Example seller: {watch.seller}
               </p>
 
               <div className="mt-5 flex items-center justify-between">
@@ -72,9 +77,9 @@ export function MarketplacePreview() {
                   {watch.price}
                 </span>
 
-                <button className="rounded-full border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700">
-                  View Watch
-                </button>
+                <span className="rounded-full border border-slate-200 px-4 py-2 text-sm font-medium text-slate-400">
+                  Preview
+                </span>
               </div>
             </div>
           </div>
@@ -83,9 +88,9 @@ export function MarketplacePreview() {
 
       {/* MARKETPLACE CTA */}
       <div className="mt-10 text-center">
-        <button className="rounded-full bg-slate-900 px-7 py-3 text-sm font-medium text-white">
-          Explore Marketplace
-        </button>
+        <span className="inline-flex rounded-full bg-slate-900 px-7 py-3 text-sm font-medium text-white">
+          Marketplace Coming Soon
+        </span>
       </div>
     </section>
   );
