@@ -1,3 +1,4 @@
+import { Footer } from "./Footer";
 import { Navbar } from "./Navbar";
 
 function AppLayout({ children }) {
@@ -6,6 +7,8 @@ function AppLayout({ children }) {
       <Navbar />
 
       <main>{children}</main>
+
+      <Footer />
     </>
   );
 }
