@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const categories = [
   {
     id: 1,
@@ -47,9 +49,9 @@ export const Categories = () => {
         {/* Categories Grid */}
         <div className="grid grid-cols-2 gap-6 lg:grid-cols-4">
           {categories.map((category) => (
-            <article
-              key={category.id}
-              className="group overflow-hidden rounded-2xl bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md"
+            <Link
+              to={`/watches?category=${encodeURIComponent(category.name)}`}
+              className="group block overflow-hidden rounded-2xl bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md"
             >
               {/* Image */}
               <div className="aspect-4/5 overflow-hidden bg-slate-100">
@@ -70,7 +72,7 @@ export const Categories = () => {
                   {category.description}
                 </p>
               </div>
-            </article>
+            </Link>
           ))}
         </div>
       </div>

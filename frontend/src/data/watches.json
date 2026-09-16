@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "brand": "Seiko",
+    "model": "Presage Cocktail Time SRPB43J1",
+    "price": 42000,
+    "category": "Dress Watches",
+    "image": "/images/watches/presage-srpb43j1.jpg",
+    "description": "An elegant automatic watch with a refined dial."
+  },
+  {
+    "id": 2,
+    "brand": "Seiko",
+    "model": "5 Sports SRPE55K1",
+    "price": 28000,
+    "category": "Field Watches",
+    "image": "/images/watches/srpe55k1.jpg",
+    "description": "A versatile automatic watch for everyday wear."
+  },
+  {
+    "id": 3,
+    "brand": "Seiko",
+    "model": "5 Sports SRPD55K1",
+    "price": 32000,
+    "category": "Dive Watches",
+    "image": "/images/watches/srpd55k1.jpg",
+    "description": "A sporty automatic watch inspired by diving watches."
+  },
+  {
+    "id": 4,
+    "brand": "Citizen",
+    "model": "Brycen Chronograph CA0649-06X",
+    "price": 35000,
+    "category": "Chronograph",
+    "image": "/images/watches/brycen-chronograph-ca0649-06x.jpg",
+    "description": "A sporty chronograph with a bold design."
+  }
+]
